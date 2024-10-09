@@ -1,0 +1,21 @@
+name: NISAR_EA_Workshop_2024_10
+#
+channels:
+  - conda-forge
+dependencies:
+  - asf_search
+  - boto3
+  - earthaccess
+  - geopandas
+  - h5py
+  - imageio
+  - ipykernel
+  - ipympl
+  - matplotlib-base
+  - numpy
+  - rasterio
+  - rioxarray
+  - scipy
+  - pip
+  - pyproj
+  - s3fs
