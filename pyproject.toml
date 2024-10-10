@@ -57,7 +57,6 @@ where = ["src"]
 [tool.ruff]
 line-length = 120
 src = ["src", "tests"]
-extend-exclude = ["NISAR_ATBD_wetlands.ipynb"]
 
 [tool.ruff.format]
 indent-style = "space"
@@ -78,3 +77,6 @@ convention = "google"
 [tool.ruff.lint.isort]
 case-sensitive = true
 lines-after-imports = 2
+
+[tool.ruff.lint.extend-per-file-ignores]
+"tests/*" = ["D100", "D103", "ANN"]
