@@ -5,11 +5,13 @@ channels:
 dependencies:
   - python>=3.10
   - pip
+  # For running
   - asf_search
   - boto3
   - earthaccess
   - geopandas
   - h5py
+  - hyp3lib>=3,<4
   - imageio
   - ipykernel
   - ipympl
@@ -21,15 +23,10 @@ dependencies:
   - pyproj
   - s3fs
   # For packaging, and testing
-  - flake8
-  - flake8-import-order
-  - flake8-blind-except
-  - flake8-builtins
+  - ruff
   - setuptools
   - setuptools_scm
   - wheel
   - pytest
   - pytest-console-scripts
   - pytest-cov
-  # For running
-  - hyp3lib>=3,<4

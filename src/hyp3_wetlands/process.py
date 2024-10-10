@@ -1,5 +1,4 @@
-"""
-wetlands processing
+"""wetlands processing
 """
 
 import argparse
@@ -7,6 +6,7 @@ import logging
 from pathlib import Path
 
 from hyp3_wetlands import __version__
+
 
 log = logging.getLogger(__name__)
 
@@ -29,13 +29,12 @@ def main():
         prog='process_wetlands',
         description=__doc__,
     )
-    parser.add_argument('--greeting', default='Hello world!',
-                        help='Write this greeting to a product file')
+    parser.add_argument('--greeting', default='Hello world!', help='Write this greeting to a product file')
     parser.add_argument('--version', action='version', version=f'%(prog)s {__version__}')
     args = parser.parse_args()
 
     process_wetlands(**args.__dict__)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
